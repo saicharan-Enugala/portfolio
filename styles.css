@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #00ffcc; /* Neon Cyan */
+  --secondary-color: #ff00ff; /* Neon Magenta */
+  --background-color: #0a0a0a; /* Dark Background */
+  --text-color: #ffffff; /* White Text */
+  --accent-color: #ffcc00; /* Neon Yellow */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Glass Morphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Button Styles */
+.button {
+  background: var(--primary-color);
+  color: var(--background-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.3);
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+/* Grid Layouts */
+.projects__grid, .skills__grid, .internships__grid, .certifications__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
